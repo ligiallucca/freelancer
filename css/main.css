@@ -1,11 +1,5 @@
-*{
-    margin: 0;  
-    box-sizing:border-box;
-}
-
 body{
     font-family: Montserrat; 
-    
 }
 
 .content-title{
@@ -15,30 +9,43 @@ body{
 .secondary-title{
     font-size: 3rem;
     text-align: center;
-    }
+}
+
+.main-title {
+    color: #FFFFFF;
+    font-size: 2em;
+    line-height: 100px;
+    padding-left: 16px;
+}
 
 .navigation-menu{
     height: 100px;
     background-color: #2c3e50;
     font-family: Lato;
     display: flex;
-    justify-content: space-between;  
+    align-content: center;
+    
+}
+
+.navigation-list-container {
+    flex-grow: 1;
 }
 
 .navigation-list{
-    padding: 0;
+    height: 100%;
     display: flex;
     flex-wrap: nowrap;
-    list-style: none;
-    align-items:stretch center;
-    justify-content: space-evenly;
-    font-size: 18px; 
-    
+    justify-content: flex-end;
+    align-items: center; 
 }
 
 .navigation-list a:visited, .navigation-list a:link, .navigation-list a:active {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.navigation-list li {
+    padding: 16px;
 }
 
 .navigation-list a:hover{
@@ -51,27 +58,33 @@ body{
     background-color: #18bc9c;
     color: #FFFFFF;
     text-align: center;
-    display: flex;
  }
 
-.portfolio.images{
+ .portfolio-images{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 36px;
 }
 
-.portfolio .portfolio-item {
-    position: relative;
+.portfolio-images li {
+    padding: 12px;
+    width: 30%;
     max-width: 25rem;
 }
 
-.explanations{
+.portfolio-images img {
+    width: 100%;
+}
+
+.explanations {
     background-color: #18bc9c;
     color:#FFFFFF;
     width: auto;
     height:30rem ;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 12px auto;
     padding: 20px 30px;
@@ -81,37 +94,118 @@ body{
     color: #FFFFFF;
 }
 
-.contact{
+.contact {
     color:#2c3e50;
 
 
 }
 
-.fix-color{
-    color:#2c3e50;
-}
-
-.further-information{
+.further-information {
     background-color:#2c3e50;
 }
 
+body{
+    font-family: Montserrat; 
+}
+
+.content-title{
+    font-family: Lato;
+}
+
+.secondary-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main-title {
+    color: #FFFFFF;
+    font-size: 2em;
+    line-height: 100px;
+    padding-left: 16px;
+}
+
+.navigation-menu{
+    height: 100px;
+    background-color: #2c3e50;
+    font-family: Lato;
+    display: flex;
+    align-content: center;
+}
+
+.navigation-list-container {
+    flex-grow: 1;
+}
+
+.navigation-list{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.navigation-list a:visited, .navigation-list a:link, .navigation-list a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navigation-list li {
+    padding: 16px;
+}
+
+.navigation-list a:hover{
+    color:#18bc9c;
+    text-decoration: none;
+
+}
+
+.content{
+    background-color: #18bc9c;
+    color: #FFFFFF;
+    text-align: center;
+ }
+
+ .portfolio-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 36px;
+}
+
+.portfolio-images li {
+    padding: 12px;
+    width: 30%;
+    max-width: 25rem;
+}
+
+.portfolio-images img {
+    width: 100%;
+}
+
+.explanations {
+    background-color: #18bc9c;
+    color:#FFFFFF;
+    width: auto;
+    height:30rem ;
+}
+
+.btn {
+    display: block;
+    margin: 12px auto;
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.contact {
+    color:#2c3e50;
 
 
-    /*flex direction?
-    flex anula alinhamentos
-    wrap = quebrar a linha das figuras
-    flex-basis? até onde as divs vão = base onde o item ocupa
-    até onde o espaço pode ser distribuido
-    não usar px
-    auto = faz por sí
-    justify content:
-    space-betwen
-    space-evenly
-    align-content 
-    */
+}
 
-    /*order
-    
-   
-
+.further-information {
+    background-color:#2c3e50;
+}
 
